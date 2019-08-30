@@ -1,159 +1,210 @@
 <html lang="en">
 <head>
+    <!-- This is visible to only the author -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    .header p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15pt
+    }
+
+    .header h1 {
+    text-align: center;
+    font-size: 30pt;
+    }
+
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .data-field {
+    border: 0px solid rgba(15, 85, 70, 0.219);
+    width: 50%;
+    float: left;
+    color: brown;
+    }
+
+    .Data {
+    border: 0px solid rgba(15, 85, 70, 0.219);
+    width: 49%;
+    float: right;
+    text-align: right;
+    color: brown;
+    }
+
+    body {
+    margin: 12%;
+    background-color: rgba(15, 85, 70, 0.219);
+    }
+
+    h3, h1 {
+    color: red;
+    }
+
+    .A, .header p, .rr {
+    color: brown;
+    }
+
+    DIV.rr p {
+    color: brown;
+    }
+    </style>
     <title>Chukwuma Onwujiuba's CV</title>
 </head>
 <body>
-    <hr>
-    <table>
-        <tr>
-            <th><h1>CHUKWUMA VALENTINE ONWUJIUBA</h1></th>
-            <th><img src="https://res.cloudinary.com/ckcodes/image/upload/v15665812/IMG_20190727_165903_9_l0k7kb.jpg" alt="Chukwuma Onwujiuba" height="200" width="200"></th>           
-        </tr>
-    </table>    
-    <h4>Address</h4>
-        <p>No. 2A Chukwunonye Street off Pipeline GRA, Rumuapu Rukpokwu, Obio/Akpor Rivers State</p>
-    <h4>Email Address</h4>
+    <!-- This is visible to the viewers -->
+    <div class="header">
+        <h1>CHUKWUMA VALENTINE ONWUJIUBA</h1>
+        <p>No. 2A Chukwunonye Street off Pipeline GRA, Rumuapu Rukpokwu, Obio/Akpor, Rivers State</p>
         <p>chukwuma.onwujiuba@aun.edu.ng</p>
-    <h4>Phone Number</h4>
         <p>+2348149303554, +2349021259125</p>
+    </div>
+    <img src="https://res.cloudinary.com/ckcodes/image/upload/v15665812/IMG_20190727_165903_9_l0k7kb.jpg" alt="Chukwuma Onwujiuba" height="300" width="300" class="center">
+    <br>
     <hr>
     <h3>CAREER OBJECTIVE</h3>
-        <p>A self-motivated critical thinker always looking to advance his knowledge and skills while working
-            in a progressive <br> environment with likeminded individuals and experts.
+    <div class="rr">
+        <p>A self-motivated critical thinker always looking to advance his knowledge and skills while working in a progressive environment with likeminded individuals and experts.
         </p>
-    <hr>
-    <h3>PERSONAL DATA</h3>
-        <table>            
-            <tr>
-                <td>Date of Birth:</td>
-                <td><i>14th February, 1997</i></td>
-            </tr>
-            <tr>
-                <td>Gender:</td>
-                <td><i>Male</i></td>
-            </tr>
-            <tr>
-                <td>State of Origin:</td>
-                <td><i>Anambra</i></td>
-            </tr>
-        </table>        
-    <hr>
+    </div>    
+    <!-- These are my personal info -->
+    <h3 class="pd">PERSONAL DATA</h3>
+    <div class="data-field">
+        <p>Date of Birth</p>
+        <p>Gender</p>
+        <p>State of Origin</p>
+    </div>
+    <div class="Data">
+        <p>14th February, 1997</p>
+        <p>Male</p>
+        <p>Anambra</p>
+    </div>
+    <!-- My education history -->
+    <div>
+    <div>
     <h3>EDUCATION/CERTIFICATES</h3>
-        <table>
-            <tr>
-                <td>National Youth Service Corps (NYSC)</td>
-                <td><i>Aug. 2018 – July 2019</i></td>
-            </tr>
-            <tr>
-                <td>American University of Nigeria (AUN) Yola, Adamawa State B. Sc. Petroleum Chemistry <br>(First Class Honors)</td>
-                <td><i>Aug. 2014 – May 2018</i></td>
-            </tr>
-            <tr>
-                <td>American University of Nigeria Academy Yola, Adamawa State</td>
-                <td><i>Sept. 2008 – July 2014</i></td>
-            </tr>
-            <tr>
-                <td>ABTI International Primary School Yola, Adamawa State</td>
-                <td><i>April 2008 -July 2008</i></td>
-            </tr>
-            <tr>
-                <td>Unity Primary School Isingwu Oraifite, Anambra State</td>
-                <td><i>2002 – 2008</i></td>
-            </tr>
-        </table>
-    <hr>
-    <h3>SKILLS</h3>
+    </div>
+    <div class="data-field">
+        <p>National Youth Service Corps</p>
+        <p>American University of Nigeria (AUN), B. Sc. Petroleum Chemistry (1st Class)</p>
+        <p>American University of Nigeria Academy</p>
+        <p>ABTI International Primary School, Yola, Adamawa State</p>
+        <p>Unity Primary School, Isingwu Oraifite, Anambra State</p>
+    </div>
+    <div class="Data">
+        <p>Aug. 2018 - Jul. 2019</p>
+        <p>Aug. 2014 - May 2018</p>
+        <p>Sep. 2008 - Jul. 2014</p>
+        <p>Apr. 2008 - Jul. 2008</p>
+        <p>2002 - 2008</p>
+    </div>
+    <div>
+    <!-- A list of my transferrable skills -->
+    <div>
+        <h3>SKILLS</h3>
+    </div>
+    <div class="rr">
         <p>
             <ul>
                 <li>Ability to communicate complex information to individuals and groups, make presentations <br></li>
                 <li>Ability to give and take instructions and maintain active listening during times of pressure <br></li>
-                <li>Ability to think outside the box <br></li>
-                <li>Ability to work effectively under pressure and with little or no supervision <br></li>
-                <li>Ability to multitask and work collaboratively in a dynamic environment <br></li>
-                <li>Ability to work in a team while maintaining a good working relationship <br></li>
-                <li>Creative, innovative and resourceful in solving problems <br></li>
+                <li>Ability to think outside the box</li>
+                <li>Ability to work effectively under pressure and with little or no supervision</li>
+                <li>Ability to multitask and work collaboratively in a dynamic environment</li>
+                <li>Ability to work in a team while maintaining a good working relationship</li>
+                <li>Creative, innovative and resourceful in solving problems</li>
+                <li>HTML and CSS (Beginner)</li>
             </ul>
         </p>
+        </div>
+    </div>
     <hr>
-    <h3>LEADERSHIP EXPERIENCE</h3>
-        <table>
-            <tr>
-                <td>President, Society of Petroleum Engineers AUN Chapter</td>
-                <td><i>Aug. 2017 – Aug. 2018</i></td>
-            </tr>
-            <tr>
-                <td>Head of Tutors, Math Center AUN</td>
-                <td><i>Jan. 2016 – May 2017</i></td>
-            </tr>
-        </table>
+    <!-- Leadership roles I have filled in the past -->
+    <div>
+   
+        <h3>LEADERSHIP EXPERIENCE</h3>
+    </div>
+    <div class="data-field">
+        <p>President, Society of Petroleum Engineers, AUN Charter</p>
+        <p>Head of Tutors, Maths Center, AUN</p>
+    </div>
+    <div class="Data">
+        <p>Aug. 2017 - Aug. 2018</p>
+        <p>Jan. 2016 - May 2017</p>
+    </div>
+    <div>
+    <!-- A history of my work experience -->
+        <h3>WORK HISTORY</h3>
+    </div>
+    <div>
+        <p class="data-field A"><b>Research Assistant, Organic Chemistry Lab, AUN</b></p>
+        <p class="Data A"><b>Aug. 2017 - May 2018</b></p>
+    </div>
+    <div class="rr">
+         <ul>
+            <li>Researched on developing a local water filtering system</li>
+            <li>Kept record of the results from the experiments</li>
+            <li>Wrote detailed reports on each experiment carried out</li>
+        </ul>
+    </div>
+    <div>
+        <p class="data-field A"><b>Internship at Intels Nig. Ltd. Onne, Rivers State</b></p>
+        <p class="Data A"><b>Jun. 2017–Aug. 2017</b></p>
+    </div>
+    <div class="rr">
+        <ul>
+            <li>Interned at Shell Nigeria Exploration and Production Company (SNEPCO) base at the Federal Ocean Terminal (FOT)</li>
+            <li>Inspected vessels and cargoes with the Marine team</li>
+            <li>Assisted in taking record of warehouse stock and in maintenance exercises</li>
+            <li>Supervised transfer of cargoes within and outside the base<br></li>
+        </ul>
+    </div>
+    <div>
     <hr>
-    <h3>WORK HISTORY</h3>
-        <table>
-            <tr>
-                <td><b>Research Assistant, Organic Chemistry Lab, AUN</b></td>
-                <td><b><i>Aug. 2017 – May 2018</i></b></td>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>Researched on developing a local water filtering system <br></li>
-                        <li>Kept record of the results from the experiments <br></li>
-                        <li>Wrote detailed reports on each experiment carried out <br></li>
-                    </ul>
-                </td>
-                
-            </tr>
-            <tr>
-                <td><b>Internship at Intels Nig. Ltd. Onne, Rivers State</b></td>
-                <td><b><i>Jun. 2017–Aug. 2017</i></b></td>
-            </tr>
-            <tr>
-                <td>
-                    <ul>
-                        <li>Interned at Shell Nigeria Exploration and Production Company (SNEPCO) base at the <br> Federal Ocean Terminal (FOT)<br></li>
-                        <li>Inspected vessels and cargoes with the Marine team<br></li>
-                        <li>Assisted in taking record of warehouse stock and in maintenance exercises<br></li>
-                        <li>Supervised transfer of cargoes within and outside the base<br></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    <hr>
-    <h3>HONORS AND ACTIVITIES</h3>
-    <table>
-        <tr>
-            <td>Best Graduating Student Petroleum Chemistry Department</td>
-            <td><i>May 2018</i></td>
-        </tr>
-        <tr>
-            <td>Yaliam Press Award for Academic Excellence</td>
-            <td><i>May 2018</i></td>
-        </tr>
-        <tr>
-            <td>AUN Honor Society Member</td>
-            <td><i>Apr. 2016 – May 2018</i></td>
-        </tr>
-    </table>
-    <hr>
-    <h3>TECHNICAL EXPERTISE</h3>
+    <!-- Awards I have received and notable activities I hgave engaged in -->
+        <h3>HONORS AND ACTIVITIES</h3>
+    </div>
+    <div class="data-field">
+        <p>Best Graduating Student Petroleum Chemistry Department</p>
+        <p>Yaliam Press Award for Academic Excellence</p>
+        <p>AUN Honor Society Member</p>
+    </div>
+    <div class="Data">
+        <p>May 2018</p>
+        <p>May 2018</p>
+        <p>Apr. 2016 – May 2018</p>
+    </div>
+    <div>
+    <!-- My experience with various industrial machines -->
+        <h3>TECHNICAL EXPERTISE</h3>
+    </div>
+    <div class="rr">
         <p>
-            <ul>
-                <li>Basic operational knowledge of a Mass Spectrometer, Atomic Absorption Spectrometer, Infrared Spectrometer, <br> UV/Vis Spectrometer, HPLC Machine<br></li>
+           <ul>
+                <li>Basic operational knowledge of a Mass Spectrometer, Atomic Absorption Spectrometer, Infrared Spectrometer, UV/Vis Spectrometer, HPLC Machine<br></li>
             </ul>
         </p>
-    <hr>
+    </div>
+    <!-- Publcations I have been a part of over time -->
     <h3>PUBLICATIONS</h3>
-        <p>
-            <ul>
-                <li>Effect of Corrosion Inhibitors on Aluminum Alloys: A Review (Book Chapter in the Encyclopedia of <br> Aluminum and Its Alloys)<br></li>
-                <li>Application of Natural Plant Sensitizers with Polyaniline Electrode Couple in Dye-Sensitized Solar Cells <br> (International Journal of Scientific & Engineering Research, Volume 9, Issue 10, October 2018)<br></li>
-            </ul>
-        </p>
+        <div class="rr">
+            <p>
+                <ul>
+                    <li>Effect of Corrosion Inhibitors on Aluminum Alloys: A Review (Book Chapter in the Encyclopedia of Aluminum and Its Alloys)</li>
+                    <li>Application of Natural Plant Sensitizers with Polyaniline Electrode Couple in Dye-Sensitized Solar Cells (International Journal of Scientific & Engineering Research, Volume 9, Issue 10, October 2018)<br></li>
+                </ul>
+            </p>
+        </div>
+        
     <hr>
+    <!-- My referees -->
     <h3>REFERENCES</h3>
+    <div class="rr">
         <p>
             Adams F. Victoria (Ph.D) <br>
             Assistant Professor <br>
@@ -172,6 +223,7 @@
             +2348055501032 <br>
             Wan.jahng@aun.edu.ng <br>                
         </p>
-        <hr>
+    </div>
+    <hr>
 </body>
 </html>
