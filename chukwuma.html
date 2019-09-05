@@ -6,40 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <style>
     .header p {
-    text-align: center;
-    font-weight: bold;
-    font-size: 15pt
+        text-align: center;
+        font-weight: bold;
+        font-size: 15pt
     }
 
+    }
     .header h1 {
-    text-align: center;
-    font-size: 30pt;
+        text-align: center;
+        font-size: 30pt;
+    }
+
+    .header {
+        width: 80%;
+        padding: 10px;
+        float: left;
     }
 
     .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+        border: 2px solid lightblue;
+        float: left;
+        width: 15%;
+        margin: 18px;
     }
 
     .data-field {
-    border: 0px solid rgba(15, 85, 70, 0.219);
-    width: 50%;
-    float: left;
-    color: brown;
+        border: 0px solid rgba(15, 85, 70, 0.219);
+        width: 50%;
+        float: left;
+        color: brown;
     }
 
     .Data {
-    border: 0px solid rgba(15, 85, 70, 0.219);
-    width: 49%;
-    float: right;
-    text-align: right;
-    color: brown;
+        border: 0px solid rgba(15, 85, 70, 0.219);
+        width: 49%;
+        float: right;
+        text-align: right;
+        color: brown;
     }
 
     body {
-    margin: 12%;
-    background-color: rgba(15, 85, 70, 0.219);
+        margin: 5%;
+        background-color: beige;
     }
 
     h3, h1 {
@@ -53,18 +61,52 @@
     DIV.rr p {
     color: brown;
     }
+
+    .arrowbox {
+        width: 200px;
+        height: 30px;
+        background-color: lightblue;
+        border-radius: 5px;
+        position:initial;
+        top: 3cm;
+        left: 230px;
+        padding: 10px;
+        font-family: Roboto, sans-serif;
+        font-size: 14pt;
+        line-height: 22px;
+        text-align: center;
+    }
     </style>
     <title>Chukwuma Onwujiuba's CV</title>
+    <script>
+            function Validate (){
+                var fullName = document.contactForm.fullName;
+                if(fullName.value.length<5) {
+                    alert("Name must be longer than 4 characters!");
+                    return false;
+                }
+                var message = document.contactForm.message;
+                if(message.value.length<20); {
+                    alert("Message must be longer than 20 characters");
+                    return false;
+                }
+                var a = /^[A-Za-z]/;
+                if(document.contactForm.fullName.value.match(a)); {
+                    alert("Success");
+                    return true;
+                }
+            }
+    </script>
 </head>
 <body>
     <!-- This is visible to the viewers -->
     <div class="header">
         <h1>CHUKWUMA VALENTINE ONWUJIUBA</h1>
         <p>No. 2A Chukwunonye Street off Pipeline GRA, Rumuapu Rukpokwu, Obio/Akpor, Rivers State</p>
-        <p>chukwuma.onwujiuba@aun.edu.ng</p>
-        <p>+2348149303554, +2349021259125</p>
+        <p><a href="" onclick="return false;">chukwuma.onwujiuba@aun.edu.ng</a> </p>
+        <p><a href="" onclick="return false">+2348149303554 , +2349021259125</a></p>
     </div>
-    <img src="https://res.cloudinary.com/ckcodes/image/upload/v15665812/IMG_20190727_165903_9_l0k7kb.jpg" alt="Chukwuma Onwujiuba" height="300" width="300" class="center">
+    <img src="https://res.cloudinary.com/ckcodes/image/upload/v15665812/IMG_20190727_165903_9_l0k7kb.jpg" alt="Chukwuma Onwujiuba" height="250" width="200" class="center">
     <br>
     <hr>
     <h3>CAREER OBJECTIVE</h3>
@@ -225,5 +267,37 @@
         </p>
     </div>
     <hr>
+    <div class="arrowbox">Contact Form</div>
+    <form action="" name="contactForm">
+        <table cellspacing = "2" cellpadding = "2">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="fullName" id="text"><br></td>
+            </tr>
+            <tr>
+                <td>Title:</td>
+                <td>
+                    <select name="Title">
+                        <option value="-1">Select</option>
+                        <option value="1">Mr</option>
+                        <option value="2">Mrs</option>
+                        <option value="3">Other</option>
+                    </select><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"><br></td>
+            </tr>
+            <tr>
+                <td>Message:</td>
+                <td><input type="text" name="message" id="msg"><br></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" onclick="Validate();"></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
